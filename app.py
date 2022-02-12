@@ -19,7 +19,7 @@ app = Flask(__name__)
 from flask import request, render_template
 import joblib
 
-@app.route("/", methods=["Get","POST"])
+@app.route("/", methods=["GET","POST"])
 def index():
     if request.method == "POST":
         rates = request.form.get("rates")
